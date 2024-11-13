@@ -4,8 +4,11 @@ import "./App.css";
 function App() {
   const [count, setCount] = useState(0);
   useEffect(() => {
-    // @ts-expect-error because typo???
-    window.electron.subscribeStatistics((stats) => console.log(stats));
+    // @ts-expect-error because haven't added type yet
+    window.electronApi.subscribeStatistics((stats) => console.log(stats));
+
+    // @ts-expect-error because haven't added type yet
+    window.electronApi.getStaticData();
   }, []);
 
   return (
