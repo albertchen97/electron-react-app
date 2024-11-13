@@ -1,0 +1,13 @@
+// tsconfig for the Electron code
+{
+    "compilerOptions": {
+        "strict": true,
+        // generate ESM syntax JS code
+        "target": "ESNext",
+        // generate ESM modules (nodenext is always the latest version of nodejs)
+        "module": "NodeNext",
+        "outDir": "../../dist-electron",
+        // skip typechecking all .d.ts files (ignore errors in dependencies)
+        "skipLibCheck": true
+    }
+}
