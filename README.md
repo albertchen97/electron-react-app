@@ -1,1 +1,1 @@
-# electron-react-app
+# Electron React Resource Monitor
